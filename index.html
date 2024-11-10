@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiplee</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">
+            <i><b>SHIPLEE</b></i>
+          </h2>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">SIGNUP</a></li>
+            <li><a href="#">SERVICE+</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <div class="search">
+          <button class="btn"><b>Get Started</b></button>
+        </div>
+      </div>
+      <div class="content">
+        <h2>
+          Join the Shiplee <br />Franchise: Earn <br />Rs.30,000 Per Month
+        </h2>
+
+        <button class="cn" onclick="openForm()"><a href="#">JOIN US</a></button>
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h4>
+              Start Your Journey <br />
+              with Shiplee
+          </h4>
+            <b>NAME</b>
+            <input type="text" name="name" placeholder="Enter Name Here" />
+            <b> CONTACT</b>
+            <input type="number" name="" placeholder="Enter Number Here" />
+            <button class="btnn">Join NOW</button>
+
+            <p class="liw">Have an account? Log in with</p>
+            <div class="icons">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+            </div>
+            <button type="btnn" class="btn cancel" onclick="closeForm()">
+              Close
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="point">
+          <span>🚀</span>
+          <p>Revolutionize logistics with AI solutions.</p>
+        </div>
+        <div class="point">
+          <span>💼</span>
+          <p>Earn steady income with a top logistics platform.</p>
+        </div>
+        <div class="point">
+          <span>📈</span>
+          <p>Access support and extensive network benefits.</p>
+        </div>
+        <div class="point">
+          <span>🌟</span>
+          <p>Enhance your business with innovative tech.</p>
+        </div>
+        <div class="point">
+          <span>🌐</span>
+          <p>Expand with our vast courier network.</p>
+        </div>
+        <div class="point">
+          <span>📊</span>
+          <p>Use analytics to boost logistics efficiency.</p>
+        </div>
+        <div class="point">
+          <span>🤝</span>
+          <p>Join a supportive community of entrepreneurs.</p>
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+    </div>
+
+    <div class="cardsss">
+      <div class="cardss" onclick="toggleLiftUp(this)">
+        <img
+          src="WhatsApp Image 2024-11-09 at 7.17.50 PM.jpeg"
+          alt="Logo"
+          class="card-logo"
+        />
+        <h2 class="cards-title">Become a Franchisee</h2>
+        <p class="cards-content">
+          Join Shiplee logistics with our AI-enabled solutions. Enjoy steady
+          income and comprehensive support.
+        </p>
+      </div>
+      <div class="cardss" onclick="toggleLiftUp(this)">
+        <img
+          src="WhatsApp Image 2024-11-09 at 7.16.35 PM.jpeg"
+          alt="Logo"
+          class="card-logo"
+        />
+        <h2 class="cards-title">Earn Commissions</h2>
+        <p class="cards-content">
+          Earn a competitive commission on each booking. The more you book, the
+          more you earn!
+        </p>
+      </div>
+      <div class="cardss" onclick="toggleLiftUp(this)">
+        <img
+          src="WhatsApp Image 2024-11-09 at 7.17.37 PM.jpeg"
+          alt="Logo"
+          class="card-logo"
+        />
+        <h2 class="cards-title">Dedicated Support</h2>
+        <p class="cards-content">
+          Get access to 24/7 support and comprehensive training to help you
+          succeed as a Shiplee franchisee.
+        </p>
+      </div>
+    </div>
+
+   
+
+    <!-- //new section 3rd -->
+    <h3> <b>FRANCHISE BENEFITS</b></h3> 
+    <div class="containers">
+  
+      <div class="testimonials">
+        <ul class="My_cards">
+          <li>
+            <img src="margin.png" alt="" srcset="" />
+            <h4>High Profit Margins</h4>
+            <p>
+              Enjoy substantial profit margins on each booking you make with our
+              competitive pricing structure.
+            </p>
+          </li>
+          <li>
+            <img src="support.jpg" />
+            <h4>Full Support</h4>
+            <p>
+              Receive comprehensive support from our dedicated team, ensuring
+              your business runs smoothly.
+            </p>
+          </li>
+          <li>
+            <img src="network.jpg" />
+            <h4>Extensive Network</h4>
+            <p>
+              Leverage our extensive courier network to offer top-notch delivery
+              services across the country.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+ 
+    <div class="containers">
+      
+        <div class="testimonials">
+          <ul class="My_cards">
+            <li>
+                <img src="tools.png" />
+                <h4>Easy Setup</h4>
+                <p>
+                  Set up your franchise quickly with minimal hassle, thanks to our
+                  streamlined onboarding process.
+                </p>
+              </li>
+              <li>
+                <img src="community.png" />
+                <h4>Training Programs</h4>
+                <p>
+                  Participate in our training programs to stay updated on the latest
+                  in logistics and customer service
+                </p>
+              </li>
+              <li>
+                <img src="customer.png" />
+                <h4>Customer Support</h4>
+                <p>
+                  Provide your customers with exceptional support, backed by our
+                  24/7 customer service team.
+                </p>
+              </li>
+          </ul>
+        </div>
+      </div>
+   
+    <div class="content2">
+    
+   <div class="page-section">
+    <h1>From anywhere to everywhere</h1>
+      <div class="icon-container ">
+        <i class="fas fa-home">
+          <img src="ecom express.png" alt="" srcset="" />
+        </i>
+        <i class="fas fa-car">
+          <img src="bluedart.png" alt="" srcset="" />
+        </i>
+        <i class="fas fa-home">
+          <img src="dtdc.jfif" alt="" srcset="" />
+        </i>
+        <i class="fas fa-car">
+          <img src="smatr.jfif" alt="" srcset="" />
+        </i>
+        <i class="fas fa-home">
+          <img src="ekart.png" alt="" srcset="" />
+        </i>
+        <i class="fas fa-car">
+          <img src="qwqer.jfif" alt="" srcset="" />
+        </i>
+        <i class="fas fa-home">
+          <img src="xpressbess.png" alt="" srcset="" />
+        </i>
+      </div>
+    </div>
+</div>
+  <footer>
+
+    <div class="footertext">
+        <div class="midfootertext">
+            © SHIPLEE, All Right Reserved.</div>
+    </div>
+  </footer>
+
+    <div class="scroll-to-top" id="scrollToTopBtn">⬆️</div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

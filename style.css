@@ -1,0 +1,1020 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-image:  radial-gradient(rgba(121, 181, 221, 0.473),rgba(176, 208, 223, 0.288),rgba(45, 163, 231, 0.692));
+    background-position: center;
+    height: 130vh;
+ 
+   }
+
+/* @media (min-width: 768px) {
+    .main {
+       height: 70vh;
+
+    }
+} */
+.navbar{
+    background-color: rgb(21, 21, 83);;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    position:relative;
+
+ 
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.search{
+    width: 300px;
+    float: left;
+    margin-left: 270px;
+}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  border: 2px solid #070707;
+  z-index: 9;
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 30px;
+  padding-bottom: 20px;
+  background-color: rgb(61, 60, 60);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=number] {
+  width: 170px;
+  padding: 10px;
+  margin: 2px 0 20px 0;
+  border: none;
+  background: #4d4c4c;
+}
+h2{
+    text-align: center;
+    color: #e0da7b;
+    padding-bottom: 5px;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #e7dfdf;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #f1f50a;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    width: 100%;
+    height: 45px;
+    background: #e72012;
+    border: none;
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    text-align: center;
+    margin-left: 10px;
+ 
+}
+.form-container .cancel :hover {
+background: #fff;
+color: #ff7200;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .cn-button:hover {
+  opacity: 1;
+background-color: #f1f50a;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 0px solid #ff7200;
+    margin: 10px 200px;
+    color: #0c0c0c;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+   
+}
+.btn:hover{
+    color: #000;
+    background-color: #e5e6df;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h2{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    color: rgb(21, 21, 83);
+    text-shadow: 1px 2px #2e2e2e;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+p{
+    text-align: center;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #e5f508;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 527px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+.cn:hover{
+    background-color: #fff;
+}
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
+/* .form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+} */
+
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+.btnn{
+    width: 100%;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 35px;
+    padding-top: 15px;
+    transition: 0.3s ease;
+    align-items: center;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
+
+
+@media screen and (max-width:1200px) {
+    /*Normal Screen*/
+
+    .navbar{
+        width: 100%;
+        height: 80px;
+    }
+    ul{
+        margin-left: 30px;
+    }   
+    ul li{
+        margin-left: 60px;
+    }
+    ul li a{
+       font-size: 1.6vw; 
+    }
+    .search{
+        margin-top: 3px;
+        margin-left: 290px;
+    }
+    .srch{
+        height: 40px;
+        width: 190px;
+        font-size: 14px;
+    }
+    .btn{
+        height:40px;
+        width: 80px;
+    }
+    .content{
+        width: 100%;
+    }
+    .content h1, .content span{
+        font-size: 4.5vw; 
+    }
+    .content .par{
+        width: 90%;
+        font-size: 1.5vw;
+    }
+    .content .cn{
+        width: 13%;
+        height: 3.5vw;
+        font-size: 1.8vw;
+    }
+    .content a{
+        font-size: 1.6vw
+    }
+}
+
+@media screen and (max-width:1170px) {
+    /*Login-box*/
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+    .form{
+        margin-left: -30px;
+        width: 250px;
+        height: 370px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top: 420px;
+        left: 50px;
+        transform: translate(0%,-5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+  
+    .form input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid #ff7200;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    .btnn a{
+        font-size: 16px;
+    }
+    .form .link a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    /*For tablet*/
+   
+    .content{
+        margin-top: 120px;
+        width: 80%;   
+        margin-left: 40px;  
+    }
+    .content h1, .content span{
+        font-size: 6vw; 
+    }
+    .content .par{
+        width: 90%;
+        font-size: 1.8vw;
+    }
+    .content .cn{
+        width: 15%;
+        height: 4.5vw;
+        font-size: 2vw;
+        justify-content: center;
+        align-items: center;
+        margin-left: 140px;
+    }
+
+    .content a{
+        font-size: 2vw
+    }
+    .logo{
+        margin-left: 240px;
+        width: 100%;
+        margin-top: 1px;
+        font-size: 5vw;
+    }
+    .menu{
+        width: 100%;
+    }
+    ul{
+        margin-top: -36px;
+        margin-left: 5px;
+    }
+    ul li{
+        margin-left: 60px;
+    }
+    ul li a{
+       font-size: 2vw; 
+    }
+    .search{
+        margin-top: -20px;
+        margin-left: 60px;   
+    }   
+    .srch{
+        height: 30px;
+        width: 160px;
+        font-size: 12px;
+    }
+    .btn{
+        height:30px;
+        width: 70px;
+    }
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+    .form{
+        margin-left: -30px;
+        width: 250px;
+        height: 370px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top: 430px;
+        left: 50px;
+        transform: translate(0%,-5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .form input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid #ff7200;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    .btnn a{
+        font-size: 16px;
+    }
+    .form .link a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /*IPAD*/
+    .main{
+        height: 100vh;
+
+    }
+    .content{
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    .search{
+        margin-top: -40px;
+        margin-left: 42px;
+    }
+    .logo{
+        margin-left: 180px;
+        font-size: 4vw;
+    }
+    ul{
+        margin-top: -25px;
+        margin-left: -5px;
+    }
+    ul li {
+        margin-left: 50px;
+    }
+    ul li a{
+        font-size: 2vw;
+    }   
+}
+
+@media screen and (max-width: 450px){
+    /*mobile*/
+    .logo{
+        margin-left: 140px;
+        font-size: 4vw;
+    }
+    ul{
+        margin-top: -50px;
+    }
+    ul li {
+        margin-left: 42px;
+    }
+    ul li a{
+        font-size: 2vw;
+    }  
+    .search{
+        margin-top: -40px;
+        margin-left: 38px;
+    } 
+.containers{
+    margin-right: 21px;
+}
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 1%;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+.scroll-to-top:hover {
+    background-color: #2980b9;
+}
+
+  
+/* Scroll Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container {
+    max-width: 100%;
+    padding: 5px 6px;
+    background-image: radial-gradient(rgba(45, 163, 231, 0.692));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+box-shadow: 2px 2px 1p 1px grey;
+   margin-right:40px;
+    height: 40vh;
+}
+/* @media screen and (max-width: 450px){
+    
+.container{
+    margin-right: 150px;
+  height: 50vh;
+} */
+/* } */
+h2 {
+    color: #f7f2f2;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.point {
+    /* /* display: flex; */
+     align-items: center;
+    margin: 7px 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    display: none;
+}
+.point span {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 33px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+   
+}
+.point p {
+    margin: 0;
+    font-size: 16px;
+    color: #080808;
+}
+.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10;
+}
+.cardsss {
+    display: flex; /* Align cards horizontally */
+    gap: 20px; /* Space between cards */
+ 
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image:  radial-gradient(rgba(168, 203, 226, 0.212),rgba(106, 117, 122, 0.288),rgba(45, 163, 231, 0.281));
+    background-position: center;
+
+}
+.cardss {
+    background: white;
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardss {
+    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Limit the max width to ensure it doesn't get too large */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .cardsss {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .cardss {
+        width: 39%; /* Ensure full width on smaller screens */
+        margin: 0px 0; /* Adjust margin for better spacing */
+        height: 190px;
+    }
+}
+@media (max-width: 600px) {
+    .cardsss {
+        flex-direction: column; /* Stack items vertically */
+        height: 90vh;
+        width: 120%;
+    }
+    .cardss {
+        width: 39%;  /* Full width on mobile */
+        margin-bottom: 20px;  /* Space between cards */
+        margin-top: -33px;
+    }
+}
+
+
+.cardss.active {
+    transform: scale(1.1) translateY(-20px); /* Lift and zoom effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for lifted effect */
+    z-index: 5;
+}
+.cardss-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.cards-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.cards-content {
+    font-size: 16px;
+    color: #0c0c0c;
+    line-height: 1.6;
+}
+/* Clearfix for Icon Container */
+/* Base Styles for Mobile First */
+
+
+/* Container for isolated icon section */
+.page-section {
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background to distinguish */
+    text-align: center;
+}
+
+/* Heading inside the page-section */
+.page-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Icon Container Styles */
+.icon-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+    gap: 15px;
+    justify-content: center; /* Center align icons */
+    align-items: center;
+}
+
+/* Image icons */
+.icon-container img {
+    width: 70px;
+    height: auto;
+}
+
+/* Font-based icons */
+.icon-container i {
+    font-size: 20px;
+    margin-top: 10px;
+    animation: moveIcons 5s infinite linear;
+}
+
+/* Animation for moving icons */
+@keyframes moveIcons {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(80vw); /* Control distance of movement */
+    }
+}
+
+/* Responsive Styles */
+
+/* For small screens up to 600px */
+@media (max-width: 600px) {
+    .page-section {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .page-section h1 {
+        font-size: 20px;
+    }
+
+    .icon-container {
+        gap: 10px;
+    }
+
+    .icon-container img {
+        width: 50px; /* Smaller icons on mobile */
+    }
+
+    .icon-container i {
+        font-size: 16px;
+    }
+}
+
+/* For screens between 600px and 768px */
+@media (min-width: 600px) and (max-width: 768px) {
+    .page-section h1 {
+        font-size: 22px;
+    }
+
+    .icon-container img {
+        width: 60px;
+    }
+
+    .icon-container i {
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) {
+.container{
+    margin-left: 21px;
+}
+}
+/* For larger screens above 768px */
+@media (min-width: 768px) {
+    .page-section h1 {
+        font-size: 28px;
+    }
+
+    .icon-container img {
+        width: 80px;
+    }
+
+    .icon-container i {
+        font-size: 20px;
+    }
+}
+
+
+/* Animation for moving icons */
+@keyframes moveIcons {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(90vw); /* Move icons to the right edge */
+        transform: translateX(90vw); /* Move icons to the right edge */
+    }
+}
+
+.containers{
+    background-color: #c2c1c133;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+     height: 53vh; 
+       
+    
+}
+.My_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+ 
+}
+.testimonials {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 3%;
+     flex-wrap: wrap; 
+     align-items: center;
+    gap: 20px; /* Add gap between columns */
+    width: 70%; /* Ensure the container spans full width */
+    justify-content: center;
+    margin-left: 137px;
+}
+
+.testimonials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+ /* flex-wrap: wrap; */
+    width: 100%;
+    
+}
+
+.testimonials li {
+    background-color: #c9dd71;
+    margin: 40px 20px;
+    width: 40%;
+    height: 230px;
+    border: solid 2px hotpink;
+    position: relative;
+    transition: ease-in-out .3s;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+
+}
+
+.testimonials li img {
+    height: 70px;
+    width: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px #fff;
+    background-color: #fff;
+    transition: box-shadow 0.3s linear;
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: bolder;
+    color: #070707;
+    text-align: center;
+    align-items: center;
+    background-color: #20212480;
+   
+}
+h4 {
+    font-size: 27px;
+    font-weight: bolder;
+    color: #070707;
+    text-align: center;
+    align-items: center;
+}
+
+.testimonials li p {
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    top: 80px;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 19px;
+    color: #494848;
+}
+
+.testimonials li h4 {
+    position: absolute;
+    text-decoration: bolder;
+    bottom: 70%;
+    text-align: center;
+    left: 20%;
+    font-size: 20px;
+}
+
+.testimonials li:hover {
+    background-color: #212121;
+    color: #dddbdb;
+}
+
+.testimonials li:hover img {
+    height: 80px;
+    width: 80px;
+}
+.testimonials li:hover h4 {
+    background-color: #212121;
+    color: #dddbdb;
+}
+@media only screen and (max-width: 600px) {
+    .containers{
+        height: 960px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+ 
+    .testimonials {
+        padding: 10px;  /* Reduced padding for smaller screens */
+    }
+
+    .testimonials ul {
+        display: flex;
+        flex-direction: column;  /* Stack testimonials vertically */
+        padding: 0;
+        width: 70%;
+        justify-content: center;
+        margin-right: 180px;
+        padding-right: 200px;
+    }
+
+    .testimonials li {
+        width: 100%;  /* Each testimonial card takes full width */
+        margin-bottom: 15px;  /* Space between cards */
+        padding: 5px;  /* Padding inside each card */
+    }
+
+    .testimonials li img {
+        width: 60px;  /* Slightly smaller images */
+        height: 60px;
+    }
+
+    .testimonials li h4 {
+        font-size: 1rem;
+    }
+
+    .testimonials li p {
+        font-size: 0.9rem;
+    }
+}
+
+.credit a {
+    text-decoration: none;
+    color: #202124;
+    font-weight: bold;
+}
+.footertext{
+    height: 30px;
+    background-color: rgb(12, 12, 12);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+ }
